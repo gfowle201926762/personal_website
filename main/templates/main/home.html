@@ -1,17 +1,39 @@
 {% extends 'main/base_home.html' %}
 
 {%block title%}Welcome!{%endblock%}
-
  
 {%block content%}
 <div class="container trm-l">
     <div class="row justify-content-center">
-        <div class="col-md-6 col-sm-8 text-center">
-            <h1 class="display-2">My projects</h1>
-            <p class="mt-3 lead"> A bit about me.</p>
-            <a class="text-decoration-none lead" href="{% url 'home' %}">Chess project</a>
+       <div class="col-md-6 col-sm-8 text-center">
+            <div>
+                <h1 class="display-1">My projects</h1>
+                <p class="mt-3 lead"> A bit about me.</p>
+                <a class="text-decoration-none lead" href="{% url 'home' %}">Chess project</a>
+            </div>
+            <div class="card trm-m">
+                <h1 class="display-5">Chess</h1>
+                <p>This is an interactive chess game originally built using Python. Play against another human or a hard-coded algorithm I built. The full code can be found <a href="https://github.com/gfowle201926762/chess_project"> here on my Github. </a></p>
+            </div>
+            <div class="card trm-m">
+                <h1 class="display-5">Neural Networks</h1>
+            </div>
+            <div class="card trm-m">
+                <h1 class="display-5">Social Media Website</h1>
+            </div>
+            <div class="card trm-m">
+                <h1 class="display-5">Conway's game of life</h1>
+            </div>
+            <div class="card trm-m">
+                <h1 class="display-5">Snake</h1>
+            </div>
 
-        </div>
+       </div>
+       
+
     </div>
 </div>
+{%endblock%}
+
+{%block script%}
 {%endblock%}
